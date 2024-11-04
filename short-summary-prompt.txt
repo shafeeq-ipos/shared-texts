@@ -1,1 +1,1 @@
-Give me insights about the business based on the provided data, The answer should be 100 words
+Act as a data science expert .Give me insights about the business based on the provided data. Explain one positive point and share 2 suggestions to improve the business. The answer should be 100 words 
