@@ -1,0 +1,30 @@
+Upload your purchase invoice here to extract relevant details. We will process the invoice to identify and return key fields, including:
+
+barcode: The unique identifier of the item (if available).
+name: The name or description of the item.
+qty: The quantity of each item purchased.
+cost: The cost of each item.
+Upon extraction, you will receive a JSON response in the following format:
+{
+  "items": [
+    {
+      "barcode": "123456789012",
+      "name": "Product Name",
+      "qty": 2,
+      "cost": 50.0
+    },
+    ...
+  ]
+}
+
+
+# Headings
+- Product name fields: (product name, name, description, etc.)
+- Barcode fields: (product ID, code, barcode, etc.) 
+
+# Output Format
+The output should be in JSON format, capturing each item as an object with the following keys:
+- barcode (or product ID, Barcode, code, etc.)
+- ItemName (or product name, description, Item Description , etc.)
+- Cost (or unit price, price, Rate)
+- Qty (quantity, qty)
