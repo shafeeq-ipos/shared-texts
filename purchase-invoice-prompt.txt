@@ -8,6 +8,7 @@ Upon extraction, you will receive a JSON response in the following format:
 {
   "items": [
     {
+      "slno":1
       "barcode": "123456789012",
       "name": "Product Name",
       "qty": 2,
@@ -24,7 +25,8 @@ Upon extraction, you will receive a JSON response in the following format:
 
 # Output Format
 The output should be in JSON format, capturing each item as an object with the following keys:
-- barcode (or product ID, Barcode, code, etc.)
+- SlNo (or ID, sl No,Sr. No, etc.)
+- Barcode (or product ID, Barcode, code, etc.)
 - ItemName (or product name, description, Item Description , etc.)
 - Cost (or unit price, price, Rate)
 - Qty (quantity, qty)
