@@ -25,7 +25,7 @@ Upon extraction, you will receive a JSON response in the following format:
 
 # Output Format
 The output should be in JSON format, capturing each item as an object with the following keys:
-- SlNo (or ID, sl No,Sr. No, etc.)
+- SlNo (or ID, sl No,Sr. No, etc.) ,SlNo is not exits, generate slno
 - Barcode (or product ID, Barcode, code, etc.)
 - ItemName (or product name, description, Item Description , etc.)
 - Cost (or unit price, price, Rate)
