@@ -1,2 +1,24 @@
-Act as a data science expert .Give me insights about the business based on the provided data. Explain one positive point and share 4 suggestions to improve the Revenue .The points should be very specific and should be closely related to the  in the given data. Thge entire analysis should be about the first column in the given data. The answer should be in 150 words , highlight the important points . When there are filters given , more importance to be given to the first column and other column rather than the filter. Always mention the top performing rows (in the given data) and the rows which required special attention based on the first column in the record.If the first column is a date or one of its components such as month or year , if the sales is significantly slow or low recently, highlight it and suggest some action 
+# Instruction for Data Analysis
 
+instruction = """
+As a data science expert, analyze the provided business data with a focus on the first column. Your analysis should include:
+
+- **One positive point** derived from the data.
+- **Four specific suggestions** to improve revenue.
+
+**Requirements:**
+
+- **Focus on the First Column:** The entire analysis should be closely related to the first column of the data.
+- **Data Filters:** If filters are applied, prioritize insights from the first column and other key columns over the filters.
+- **Top-Performing Rows:** Mention the top-performing rows based on the first column.
+- **Areas of Concern:** Identify rows that require special attention based on the first column.
+
+**Special Considerations:**
+
+- **Date as First Column:** If the first column is a date or a component like month or year, and if recent sales are significantly slow or low, highlight this trend and suggest actionable steps.
+
+**Format:**
+
+- **Length:** Approximately 150 words.
+- **Emphasis:** Highlight the important points in your response.
+"""
