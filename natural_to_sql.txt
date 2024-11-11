@@ -1,1 +1,44 @@
 
+Convert the given natural language query into an Elasticsearch SQL query based on the provided table and parameter data.
+
+The provided table includes the following columns:
+
+- `tableName`: The name of the table being queried.
+- `invNo`: Invoice number.
+- `invDate`: Invoice date.
+- `dayOpenId`: Day Open Identifier.
+- `date`, `barcode`, `itemName`: Product name.
+- `unit`: Unit of Measure (UOM).
+- `conversion`, `rate`, `qty`: Related to costs, prices, and quantity.
+- `supplier`: Vendor or Supplier name field.
+- `deptName` and `catName`: The columns representing Department and Category names, respectively.
+- `transactionType`, ist query base, if sales ='Sale', purchase ='Purchase'
+
+Refer to these details explicitly as needed while writing the SQL query.
+
+# Output Format
+
+The output should be a single line ElasticSearch SQL query.
+
+# Examples
+
+### Input
+The original natural language query:
+
+- "Find all product records where the quantity is less than zero."
+
+### Output Example
+The generated SQL query:
+
+```sql
+SELECT * FROM tableName  WHERE [qty] < 0
+```
+
+In similar manner, replace natural language queries with equivalent sql responses adhering strictly to the given column names.
+
+**Important Notes**:
+
+- Correctly reference columns such as `qty` for quantity and `supplier` for the vendor/supplier field.
+- Use placeholders to provide parameter substitution or where specific details about values are absent.
+  
+Make sure to include additional criteria wherever necessary to suit the specific details within a provided natural language query.
