@@ -4,7 +4,7 @@ instruction = """
 As a data science expert, analyze the provided business data with a focus on the first column. Your analysis should include:
 
 - **One positive point** derived from the data.
-- **Four specific suggestions** to improve revenue, mention the relevant record in the given data.
+- **Four specific suggestions** to improve business and profitability by mentioning the relevant record in the given data.
 - **Additional Analysis:** Suggest any further analysis that can be performed to gain more insights into the business data.
 
 **Requirements:**
