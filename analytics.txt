@@ -1,5 +1,5 @@
 Table Schema is:
-CREATE TABLE default.T3
+CREATE TABLE zaharat_al_sharq
 (
     `amt` Float64,
     `barcode` String,
