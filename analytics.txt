@@ -1,0 +1,36 @@
+CREATE TABLE default.T3
+(
+    `amt` Float64,
+    `barcode` String,
+    `catName` String,
+    `contain` Decimal(10, 0),
+    `cost` Float64,
+    `customerName` String,
+    `customerPhone` String,
+    `date` DateTime,
+    `dayName` String,
+    `dayOpenId` Int64,
+    `deptName` String,
+    `hourName` Int64,
+    `invDate` DateTime,
+    `invNo` String,
+    `itemName` String,
+    `monthName` String,
+    `primaryBarcode` String,
+    `primaryItemName` String,
+    `profit` Float64,
+    `qty` Float64,
+    `rate` Float64,
+    `storeId` Int64,
+    `storeName` String,
+    `subCatName` String,
+    `supplier` String,
+    `tax` Float64,
+    `transactionType` String,
+    `unit` String,
+    `weekName` String,
+    `yearName` Int64
+)
+ENGINE = SharedMergeTree('/clickhouse/tables/{uuid}/{shard}', '{replica}')
+ORDER BY (date, barcode)
+SETTINGS index_granularity = 8192
