@@ -1,7 +1,7 @@
 {
-    "version": "6.4.4",
-    "url": "https://ipos-auto-update-release.s3.ap-south-1.amazonaws.com/windows/app-6.4.4.zip",
+    "version": "6.4.5",
+    "url": "https://ipos-auto-update-release.s3.ap-south-1.amazonaws.com/windows/app-6.4.5.zip",
     "mandatory": false,
     "releaseNotes": "",
-    "buildNumber": 644
+    "buildNumber": 645
 }
