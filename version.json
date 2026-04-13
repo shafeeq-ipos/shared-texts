@@ -1,7 +1,7 @@
 {
-    "version": "6.4.3",
+    "version": "6.4.2",
     "url": "https://ipos-auto-update-release.s3.ap-south-1.amazonaws.com/windows/app-6.4.3.zip",
     "mandatory": false,
     "releaseNotes": "",
-    "buildNumber": 643
+    "buildNumber": 642
 }
